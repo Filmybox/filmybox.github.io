@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FilmBox - Movies</title>
+
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🎬 FilmBox
+    </div>
+
+    <div class="tagline">
+        Movies • Series • Entertainment
+    </div>
+
+</header>
+
+
+<!-- HOME PAGE -->
+
+<main id="home">
+
+    <section class="hero">
+
+        <h1>🎥 Find Your Movie</h1>
+
+        <p>Search your favourite movies</p>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search Movies..."
+        >
+
+    </section>
+
+
+    <section class="movies">
+
+        <h2>🔥 Latest Movies</h2>
+
+        <div id="movie">
+
+            <div class="movie-card">
+
+                <img
+                    src="Screenshot_2026-09-12-00-11-49-39_99c04817c0de5652397fc8b56c3b3817.jpg"
+                    alt="Mirzapur Poster"
+                    class="movie-poster"
+                >
+
+                <div class="movie-info">
+
+                    <h2>Mirzapur</h2>
+
+                    <p>2026 • Hindi</p>
+
+                    <p>Action • Crime • Thriller</p>
+
+                    <button
+                        class="download-btn"
+                        onclick="openMovie()"
+                    >
+                        ⬇ Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="noResult">
+            😕 No movie found
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- DETAILS PAGE -->
+
+<main id="details">
+
+    <section class="details-container">
+
+        <button
+            class="back-btn"
+            onclick="backHome()"
+        >
+            ← Back
+        </button>
+
+
+        <div class="details-card">
+
+            <img
+                src="Screenshot_2026-09-12-00-11-49-39_99c04817c0de5652397fc8b56c3b3817.jpg"
+                alt="Mirzapur Poster"
+                class="details-poster"
+            >
+
+            <h1>Mirzapur</h1>
+
+            <div class="movie-details">
+
+                <p><b>🎬 Movie:</b> Mirzapur</p>
+
+                <p><b>📅 Year:</b> 2026</p>
+
+                <p><b>🗣 Language:</b> Hindi</p>
+
+                <p><b>🎭 Genre:</b> Action, Crime, Thriller</p>
+
+            </div>
+
+
+            <h2>⬇ Download Movie</h2>
+
+            <p class="select-text">
+                Select your preferred quality
+            </p>
+
+
+            <!-- 480P -->
+
+            <div class="quality-box">
+
+                <h3>480p</h3>
+
+                <a id="server480_1"
+                   class="server-btn server-one"
+                   target="_blank">
+                    🚀 Server 1
+                </a>
+
+                <a id="server480_2"
+                   class="server-btn server-two"
+                   target="_blank">
+                    ⚡ Server 2
+                </a>
+
+            </div>
+
+
+            <!-- 720P -->
+
+            <div class="quality-box">
+
+                <h3>720p</h3>
+
+                <a id="server720_1"
+                   class="server-btn server-one"
+                   target="_blank">
+                    🚀 Server 1
+                </a>
+
+                <a id="server720_2"
+                   class="server-btn server-two"
+                   target="_blank">
+                    ⚡ Server 2
+                </a>
+
+            </div>
+
+
+            <!-- 1080P -->
+
+            <div class="quality-box">
+
+                <h3>1080p</h3>
+
+                <a id="server1080_1"
+                   class="server-btn server-one"
+                   target="_blank">
+                    🚀 Server 1
+                </a>
+
+                <a id="server1080_2"
+                   class="server-btn server-two"
+                   target="_blank">
+                    ⚡ Server 2
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 FilmBox
+</footer>
+
+
+<script src="script.js?v=4"></script>
+
+</body>
+
+</html>
